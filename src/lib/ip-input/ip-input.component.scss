@@ -1,0 +1,19 @@
+@import "variables";
+
+:host(){
+    color: $error-color;
+    input{
+        &[type='date'],
+        &[type='datetime'],
+        &[type='datetime-local'],
+        &[type='month'],
+        &[type='week'],
+        &[type='time'] {
+            &::after {
+            content: ' ';
+            white-space: pre;
+            width: 1px;
+            }
+        }
+    }
+}

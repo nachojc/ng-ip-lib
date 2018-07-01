@@ -1,0 +1,10 @@
+<label ngIf="_label" [attr.for]="id">{{_label}}</label>
+<input 
+[name]="_name"
+[attr.type]="type"
+[required]="required"
+[attr.id]="id"
+[attr.tabindex]="tabindex"
+[attr.placeholder]="_placeholder"
+[(ngModel)]="_data"
+>
